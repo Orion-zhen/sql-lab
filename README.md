@@ -21,3 +21,5 @@
 2. 修改`pg_hba.conf`, 在访问控制表中新增一行: `host all all 192.168.1.0/24 sha256`, 其中IP地址可以自行选择, 最后一项为加密方式, 这里选择`sha256`
 3. 创建一个新的用户, 因为opengauss禁止用初始用户远程连接: `CREATE USER <username> WITH SYSADMIN password 'your_password';`
 4. 开放端口, 这里以openEuler为例: 在root用户下, 执行`firewall-cmd --add-port 7654/tcp`
+
+> 当然也可以直接禁用防火墙: 运行`systemctl stop firewalld`和`systemctl disable firewalld`
