@@ -1,0 +1,5 @@
+Faker
+psycopg2-binary
+python-dateutil
+six
+typing_extensions
