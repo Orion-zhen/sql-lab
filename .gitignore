@@ -1,5 +1,6 @@
 config/settings.py
 test.py
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
