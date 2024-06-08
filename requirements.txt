@@ -2,4 +2,5 @@ Faker
 psycopg2-binary
 python-dateutil
 six
+tqdm
 typing_extensions
