@@ -1,6 +1,9 @@
 config/settings.py
 test.py
-output.txt
+output*.txt
+c_data.json
+s_data.json
+sc_data.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
