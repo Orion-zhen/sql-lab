@@ -447,3 +447,51 @@ WHERE CNAME = '信号与系统' AND TEACHER = '张明';
 ## 实验四
 
 问题一和问题二是相同的, 只是数据量不同而已. 故我将两问合并, 一起处理
+
+我从西安交通大学, 上海交通大学, 北京大学, 清华大学等的招生录取名单上爬取了若干学生姓名信息, 从教务处爬取课程名和相关教师名字, 经过截断, 构建成了相关数据集(`json`格式)
+
+然后通过JDBC写入到数据库中
+
+插入结果如下:
+
+![mass-s004](./assets/mass-s004.png)
+
+![mass-c004](./assets/mass-c004.png)
+
+![mass-sc004](./assets/mass-sc004.png)
+
+## 实验五
+
+与我交换数据库备份的是蔡东华同学, 学号尾号是303
+
+### 恢复数据库
+
+![restore](./assets/restore.jpg)
+
+查看其中的数据库:
+
+![overview](./assets/overview.jpg)
+
+![detail](./assets/detail.jpg)
+
+### 生成数据质量分析
+
+![s_detail](./assets/s_detail.jpg)
+
+![c_detail](./assets/c_detail.jpg)
+
+![sc_detail](./assets/sc_detail.jpg)
+
+是非常高质量的数据
+
+### 设计合理性
+
+分别列出三个表的列属性设计:
+
+![s_keys](./assets/s_keys.jpg)
+
+![c_keys](./assets/c_keys.jpg)
+
+![sc_keys](./assets/sc_keys.jpg)
+
+设计的很合理, 充分兼顾了变量类型和存储开销
